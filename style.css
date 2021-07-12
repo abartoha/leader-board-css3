@@ -1,0 +1,282 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+/* navigation bar */
+
+nav{
+    height: 4em;
+    background-color: indigo;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    margin-left: 2em;
+    margin-right: 0.3em;
+    color: white;
+}
+.nav-left{
+    color: white;
+    display: flex;
+    flex-wrap:wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-right{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0em 1em 0em 1em;
+}
+
+.nav-link{
+    text-decoration: none;
+    color:white;
+    margin-right: 1em;
+}
+
+/* body & common utilities */
+body{
+    font-family: 'Poppins',sans-serif;
+    background-color: #e1dfee;
+}
+
+main{
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding-top: 1em;
+}
+
+
+/* container */
+.container{   
+    width: 870px;
+    background-color: white;
+    padding: 1em;
+    margin: 0.5em 10% auto 10%;
+    border-radius: 1em;
+}
+
+.section-title{
+    color: indigo;
+}
+
+/* top player style */
+.top-players{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.player{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 1em 0em 1em 0em;
+    
+}
+
+.player img{
+    width: 3em;
+    height: auto;
+    margin-left: 1em;
+}
+
+.player-name{
+    margin-left: 0.5em;
+    width: 10em;
+}
+
+/* horizontal lines */
+.horizontal-line-1{
+    margin: 1em 0em 1em 0em;
+    color: grey;
+    opacity: 0.3;
+}
+
+/* top blog posts */
+.top-blogs{
+    display: flex;
+    flex-wrap:wrap;
+}
+
+.top-blogs article{
+    display: flex;
+    align-items: center;
+}
+
+.top-blogs .thumbnail img{
+    width: 177px;
+    height: 117px;
+    margin-right: 0.1em;
+}
+
+.blog-info{
+    margin: 1em;
+}
+
+.blog-title{
+    color: black;
+    width: 9.3em;
+}
+
+.blog-title a{
+    color: black;
+    text-decoration: none;
+}
+
+.blog-authors{
+    color: cornflowerblue;
+    opacity: 0.7;
+}
+
+.blog-authors a{
+    text-decoration: none;
+    color: rgb(52, 104, 201);
+}
+
+/* courses posts*/
+.courses{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.course .thumbnail img{
+    width: 224px;
+    height: 104px;
+}
+
+.course {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction: column;
+    margin: 0.6em 0.1em 0.6em 0.1em;
+    padding: 0.4em;
+    box-shadow: 0 1px 1.5px black;
+    border-radius: 1em;
+}
+
+.course-title{
+    width: 224px;
+    margin-bottom: auto;
+    height: 3em;
+    overflow: hidden;
+}
+
+.course-author{
+    margin-top: auto;
+    color: grey;
+    opacity: 0.6;
+}
+
+.course-author-link{
+    text-decoration: none;
+    color:indigo;
+}
+
+.rating-duration-container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.review-star-container{
+    margin-right: 0.4em;
+}
+
+.review-star-container:hover{
+    background-color: black;
+    
+}
+
+.yellow-star{
+    color:orange;
+}
+
+.course-duration{
+    background-color: rgba(255, 69, 0, 0.3);
+    margin-left: 0.4em;
+    padding-right: 0.3em;
+    border-radius: 1em;
+    color: rgba(255,69,0,0.7);
+}
+
+.clock{
+    color:  rgba(255,69,0,0.7);
+    margin: 0em 0.2em 0em 0.2em;
+}
+
+footer{
+    min-height: 33vh;
+    background-image: linear-gradient(rgb(174, 132, 204),indigo);
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1em;
+    margin-top: 2em;
+    width: 870px;
+    color: white;
+}
+.footer-left{
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    min-height: 4em;
+}
+.footer-right{
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    min-height: 2em;
+    font-size: 2em;
+}
+
+.footer-logo{
+    margin: 0em 0.2em 0em 0.2em;
+}
+
+.links{
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    color: whitesmoke;
+}
+
+.white{
+    color:white;
+}
+
+@media (max-width: 870px) {
+    .container{
+        width: 90vw;
+        min-width: 272px;
+        background-color: white;
+        padding: 1em;
+        margin: 0.5em 10% auto 10%;
+        border-radius: 1em;
+    }
+    article{
+        display:flex;
+        flex-wrap: wrap;
+    }
+    .blog-info{
+        margin: 0em;
+    }
+    .logo{
+        margin-left: 1em;
+    }
+    .top-blogs .thumbnail img{
+        width: 177px;
+        height: 117px;
+        margin-right: 1em;
+    }
+}
